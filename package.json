@@ -1,0 +1,11 @@
+{
+  "name": "sheetsql-example",
+  "version": "0.1.0",
+  "description": "Example of using SheetsQL",
+  "main": "index.js",
+  "author": "Taras Mankovski <taras@thisdot.co>",
+  "license": "MIT",
+  "dependencies": {
+    "graphsheets": "*"
+  }
+}

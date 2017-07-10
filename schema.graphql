@@ -1,0 +1,36 @@
+type Person {
+  id: String!
+  products: [Product]
+  firstName: String
+  lastName: String
+  fullName: String
+  productsCount: Int
+}
+
+type Product {
+  id: String!
+  title: String
+  owner: Person
+}
+
+type Query {
+  person(id: String!): Person
+  persons: [Person]
+}
+
+type Mutation {
+  createPerson(person: PersonInput): Person
+  createProduct(product: ProductInput): Product
+}
+
+input ProductInput {
+  id: String
+  title: String
+}
+
+input PersonInput {
+  id: String
+  firstName: String
+  lastName: String
+  products: [ProductInput]
+}
