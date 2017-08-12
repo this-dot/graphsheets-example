@@ -1,8 +1,8 @@
 type Person {
   id: String!
-  products: [Product]
   firstName: String
   lastName: String
+  products: [Product]
   fullName: String
   productsCount: Int
 }
@@ -26,6 +26,7 @@ type Mutation {
 input ProductInput {
   id: String
   title: String
+  owner: PersonInput
 }
 
 input PersonInput {
